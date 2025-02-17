@@ -1,0 +1,202 @@
+html {
+    font-size: 16px; /* Base font size 16px for easier scaling */
+    scroll-behavior: smooth;
+}
+  
+body{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: "Inter", sans-serif;
+}
+    
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+header {
+    align-content: center;
+}
+      
+nav a{
+    text-decoration: none;
+    color: grey;
+    font-weight: 300;
+}
+      
+a:hover{
+    color: white;
+}
+
+nav {
+    display: flex;
+    background-color: black;
+    justify-content: flex-end;
+    text-transform: lowercase;
+    position: fixed;
+    top: 0; /* Ensures it sticks to the top */
+    padding: 1rem;
+    overflow-x: scroll;
+}
+
+  nav a {
+    padding: 0.9rem;
+    font-size: 1.2rem;
+  }
+
+  a.active {
+    color: white;
+  }
+    
+  h1 {
+    z-index: -900;
+    font-weight: 400;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: left; 
+    position: relative;
+    top: 8rem; /* Moves it down without affecting other elements */
+    padding: 2rem;
+}
+
+
+p {
+    font-weight: 300;
+    font-size: 3.5rem;
+    line-height: 4.25rem;
+    margin: 8rem 2rem 0 2rem;
+}
+
+ul {
+    font-weight: 300;
+    font-size: 3.5rem;
+    line-height: 4.25rem;
+    margin: 0 2rem 0 2rem;
+}
+
+.word {
+    text-decoration: 0.15rem underline white;
+    text-underline-offset: 0.4rem;
+    cursor: pointer;
+    color: inherit;
+}
+
+sup {
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: normal;
+}
+
+
+footer{
+    margin: 5rem 2rem 2rem 2rem;
+    border-top: 0.09rem solid white;
+    position: relative;
+}
+
+footer p {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    margin-top: 3rem;
+}
+
+.back-to-top {
+    display: block;
+    width: fit-content;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    color: grey;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 300;
+    transition: 0.3s;
+}
+
+.back-to-top:hover {
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+
+    
+    nav{
+        display: flex;
+        width: 100%;
+        z-index: 1000;
+        white-space: nowrap;
+    }
+
+    .nav-links{
+        width: 620%;
+        overflow-x: scroll; 
+    }
+    
+    footer p {
+        font-size: 0.9rem;
+        line-height: 1.3rem;
+        margin-top: 3rem;
+    }
+    
+    p {
+        font-weight: 300;
+        font-size: 2rem;
+        line-height: 3rem;
+        margin: 8rem 2rem 0 2rem;
+    }
+
+    ul {
+        font-weight: 300;
+        font-size: 2rem;
+        line-height: 3rem;
+        margin: 0 2rem -2rem 2rem;
+    }
+
+
+}
+
+
+@media screen and (max-width: 320px) {
+
+
+    h1{
+        font-size: 0.8rem;
+    }
+    
+    nav a {
+        padding: 0.2rem;
+        font-size: 1.2rem;
+      }
+
+
+    p {
+        font-weight: 300;
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+
+    ul {
+        font-weight: 300;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        margin: 0 2rem -2rem 2rem;
+    }
+
+    sup {
+        font-size: 1rem;
+        font-weight: 400;
+        letter-spacing: normal;
+    }
+
+    footer{
+        margin: 5rem 0 2rem 0;
+        border-top: 0.09rem solid white;
+    }
+
+    footer p {
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    margin-top: 2rem;
+    }
+
+}
