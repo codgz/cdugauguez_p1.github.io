@@ -189,14 +189,14 @@ footer p {
     }
 
     footer{
-        margin: 5rem 0 2rem 0;
+        margin: 2rem 0.5rem 0.5rem 0.5rem;
         border-top: 0.09rem solid white;
     }
 
     footer p {
-    font-size: 0.9rem;
-    line-height: 1.3rem;
-    margin-top: 2rem;
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+    margin-top: 1rem;
     }
 
 }
